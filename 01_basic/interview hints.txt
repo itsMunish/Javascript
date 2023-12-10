@@ -1,0 +1,12 @@
+// Primitive Data Type
+    7 Types : String, number, Boolean, Null, Undefined, bigint, symbol
+
+// Referance type Or NonPrimitive
+    Array, Objects, functions
+
+
+types of memory
+1. stack (Primitive)   ---we have a copy of value only
+2. heap (NonPrimitive)  -- we have a referance of actual data
+
+
