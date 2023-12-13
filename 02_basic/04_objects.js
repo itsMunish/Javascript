@@ -35,3 +35,10 @@ const obj1 = {3:"a", 4:"b"}
 const obj3 = {...obj,...obj1}
 console.log(obj3);//{ '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
+
+const course = {
+    course: "javascript course",
+    price: 999
+}
+
+
