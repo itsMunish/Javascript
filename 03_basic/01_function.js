@@ -33,3 +33,29 @@ function loginUserMessage (userName){
 }
 
 console.log(loginUserMessage("Munish"));
+
+//****************rest oprator ...  these 3 dot is call restOprator it is used if we have multiple value
+//for single paramenter. it make value in bundle
+function calculateCartPrice (...num1){
+    
+    return num1;
+}
+console.log(calculateCartPrice(200,400,500));
+
+const user = {
+    userName: "munish",
+    price: 199
+}
+
+function handleObject (anyObject) {
+    console.log(`User Name is  ${anyObject.userName} and Price is ${anyObject.price}`)
+}
+
+handleObject(user)
+
+const myNewArray =[200,400,500,600]
+function returnSecondValue (getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray));
+
