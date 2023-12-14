@@ -1,0 +1,23 @@
+                  javaScript Execution Context
+    
+     { }  ---Global Execution context  <-----this
+     { }  --Function Execution context
+javascript is single threaded
+
+javascript code execute in two Phases   1. Memory execution phase     2. Execution Phase
+
+one()
+function one (){
+    console.log("one");
+    two()
+}
+
+function two(){
+    console.log("two");
+    three();
+
+}
+function three (){
+    console.log("three");
+
+}
