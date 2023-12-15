@@ -29,7 +29,7 @@ val2 = undefined ?? 15;  //15 / it does not take num in this time
 console.log(val2);
 
 
-//------------terniary Operator-----------
+//------------terniary Operator-----------'''''''''''''''''''..................````````````````////
 //condition ? true : false
 const iceTeaPrice = 100;
 
