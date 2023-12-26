@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Advance</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLangulage (lang) {
+        const li = document.createElement('li');
+        li.innerHTML = `${lang}`
+        document.querySelector('.language').appendChild(li)
+         }
+         addLangulage("Python")
+         addLangulage("Angular")
+
+         //Optimize way to add language  --using createTextNode
+
+    function addOptiLanguage(langName){
+            const li = document.createElement('li'); 
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li)
+         }
+        addOptiLanguage("java")
+
+        //replace angular with mojo
+
+        const thirdword = document.querySelector("li:nth-child(3)")
+      //  thirdword.innerHTML= "Mojo"
+      const newli = document.createElement('li')
+      newli.innerHTML = "Mojo"
+      thirdword.replaceWith(newli)
+
+
+//remove
+const LastLang = document.querySelector("li:last-child")
+LastLang.remove()
+</script>
+</html>
